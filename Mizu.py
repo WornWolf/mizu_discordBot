@@ -16,7 +16,10 @@ intents.message_content = True
 bot = commands.Bot(command_prefix='sm ', intents=intents)
 
 queues = {}
-yt_dl_options = {"format": "bestaudio/best"}
+yt_dl_options = {
+    "format": "bestaudio/best",
+    "cookie": "cookies.txt"
+}
 ytdl = yt_dlp.YoutubeDL(yt_dl_options)
 
 ffmpeg_options = {

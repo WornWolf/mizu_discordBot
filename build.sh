@@ -7,5 +7,6 @@ apt-get update
 apt-get install -y ffmpeg
 
 # ติดตั้ง dependencies ที่ระบุใน requirements.txt
+python -m pip install --upgrade yt-dlp
 python -m pip install --upgrade pip  # อัปเกรด pip ให้เป็นเวอร์ชันล่าสุด
 python -m pip install -r requirements.txt

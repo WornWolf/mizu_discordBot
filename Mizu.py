@@ -18,7 +18,9 @@ bot = commands.Bot(command_prefix='sm ', intents=intents)
 queues = {}
 yt_dl_options = {
     "format": "bestaudio/best",
-    "cookie": "cookies.txt"
+    "username": os.getenv('USERNAME'),
+    "password": os.getenv('PASSWORD'),
+    "cookiefile": "cookies.txt"
 }
 ytdl = yt_dlp.YoutubeDL(yt_dl_options)
 

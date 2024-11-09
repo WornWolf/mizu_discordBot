@@ -18,4 +18,4 @@ if [[ ! -f cookies.txt ]]; then
 fi
 
 # ดาวน์โหลดเสียงหรือวิดีโอจาก YouTube โดยใช้ yt-dlp พร้อม cookies.txt
-yt-dlp --cookies cookies.txt -f bestaudio/best "URL ของ YouTube"
+yt-dlp --cookies cookies.txt -f bestaudio/best
